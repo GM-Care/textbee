@@ -79,7 +79,7 @@ type UseTurnstileResult = {
 }
 
 export const useTurnstile = ({
-  siteKey,
+  siteKey = '1x00000000000000000000AA',
   onToken,
   onError,
   onExpire,
