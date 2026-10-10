@@ -2,7 +2,7 @@ import axios from 'axios'
 import { getSession } from 'next-auth/react'
 
 const httpBrowserClient = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL || '',
+  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL || 'https://textbee-api-6myg.onrender.com/api/v1',
 })
 
 // Navigation seam for testing; defaults to real window.location assignment.
